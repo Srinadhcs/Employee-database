@@ -1,1 +1,35 @@
+from person import Person as p
+
+while True:
+
+    choice = input("1: Add Employee\n"
+                 "2: Remove Employee\n"
+                 "3: Display Details\n"
+                 "4: Calculate the Employees Wages\n"
+                 "5: Give a raise\n"
+                 "6: Exit\n"
+                 "Enter you choice: ")
+
+    if choice == '1':
+        p.add_employee()
+
+    elif choice == '2':
+        p.remove_employee()
+
+    elif choice == '3':
+        p.display_details()
+
+    elif choice == '4':
+        p.calculate_wages()
+
+    elif choice == '5':
+        p.give_raise()
+
+    elif choice == '6':
+        exit()
+    else:
+        print("Invalid Input")
+
+    print("\n")
+
 
